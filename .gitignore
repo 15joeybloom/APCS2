@@ -1,0 +1,23 @@
+#don't need the course CD
+13 - 14 AP Comp Sci Course CD/
+
+#netbeans stuff
+build/
+nbproject/
+manifest.mf
+build.xml
+javadoc/
+doc/
+
+#windows thumbnails
+Thumbs.db
+
+#bluej stuff
+*.class
+*.ctxt
+
+#directorySynchronizer program output
+lastSync.txt
+
+#emacs temporary files
+*~

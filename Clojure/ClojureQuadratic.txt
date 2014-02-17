@@ -1,0 +1,41 @@
+; your code goes here
+(def a (. Double parseDouble (read-line)))
+(def b (. Double parseDouble (read-line)))
+(def c (. Double parseDouble (read-line)))
+
+(def discriminant (- (* b b) ( * 4 a c )))
+(cond
+  (< discriminant 0)
+	(println "No solution")
+  (= discriminant 0)
+	(println (/ (+ (-' b) (. Math sqrt discriminant)) (* 2 a)))
+  :else
+  	(println (str (/ (+ (-' b) (. Math sqrt discriminant)) (* 2 a)) "\n"
+    			  (/ (- (-' b) (. Math sqrt discriminant)) (* 2 a)))))
+
+
+; Input 1:
+; 1
+; -2
+; 1
+; 
+; Output 1:
+; 1.0
+; 
+; Input 2:
+; 1
+; 0
+; 4
+; 
+; Output 2:
+; No solution
+;
+; Input 3:
+; .1
+;.5
+;.6
+;
+; Output 3:
+; -1.9999999999999998
+; -3.0000000000000004
+;

@@ -1,0 +1,1 @@
+Run the jar file "dist\Mandelbrot.jar" to start the program.

@@ -1,0 +1,6 @@
+(defn euclideanAlgorithm[a b] 
+  (if (= b 0) a
+	(euclideanAlgorithm b (mod a b)))
+)
+
+(print (euclideanAlgorithm 5 9))
